@@ -23,7 +23,6 @@ data "aws_caller_identity" "current" {}
 module "cluster" {
   source                                = "./modules/cluster"
   region                                = var.region
-  subnets                               = var.subnets
   vpc_name                              = var.vpc_name
   public_subnets                        = var.public_subnets
   private_subnets                       = var.private_subnets
